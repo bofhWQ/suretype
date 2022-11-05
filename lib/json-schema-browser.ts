@@ -1,5 +1,5 @@
 import jsonSchemaSchema from "ajv/lib/refs/json-schema-draft-07.json"
 
-import { setSchemaDraft07 } from "./json-schema.js"
+import {setSchemaDraft07} from "./json-schema"
 
 setSchemaDraft07( jsonSchemaSchema );

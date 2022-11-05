@@ -1,6 +1,6 @@
-import { suretype, annotate, v, ensureNamed, retype } from "./index.js"
-import { compile } from "../index-nodejs.js"
-import { getName } from "../annotations.js"
+import {annotate, ensureNamed, retype, suretype, v} from "./index"
+import {compile} from "../json-schema"
+import {getName} from "../annotations"
 
 
 describe( "suretype", ( ) =>

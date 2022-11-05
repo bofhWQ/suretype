@@ -1,21 +1,21 @@
-import { CoreValidator } from "./core/validator.js"
-import { BaseValidator } from "./base/validator.js"
-import { ValueValidator } from "./value/validator.js"
-import { BooleanValidator } from "./boolean/validator.js"
-import { NumberValidator } from "./number/validator.js"
-import { StringValidator } from "./string/validator.js"
-import { NullValidator } from "./null/validator.js"
-import { AnyValidator } from "./any/validator.js"
-import { ObjectValidator } from "./object/validator.js"
-import { ArrayValidator } from "./array/validator.js"
-import { TupleValidator } from "./tuple/validator.js"
-import { AnyOfValidator } from "./or/validator.js"
-import { AllOfValidator } from "./all-of/validator.js"
-import { IfValidator, ThenValidator, ElseValidator } from "./if/validator.js"
-import { RequiredValidator } from "./required/validator.js"
-import { RawValidator } from "./raw/validator.js"
-import { RecursiveValidator } from "./recursive/validator.js"
-import { RecursiveValue } from "./types.js"
+import {CoreValidator} from "./core/validator"
+import {BaseValidator} from "./base/validator"
+import {ValueValidator} from "./value/validator"
+import {BooleanValidator} from "./boolean/validator"
+import {NumberValidator} from "./number/validator"
+import {StringValidator} from "./string/validator"
+import {NullValidator} from "./null/validator"
+import {AnyValidator} from "./any/validator"
+import {ObjectValidator} from "./object/validator"
+import {ArrayValidator} from "./array/validator"
+import {TupleValidator} from "./tuple/validator"
+import {AnyOfValidator} from "./or/validator"
+import {AllOfValidator} from "./all-of/validator"
+import {ElseValidator, IfValidator, ThenValidator} from "./if/validator"
+import {RequiredValidator} from "./required/validator"
+import {RawValidator} from "./raw/validator"
+import {RecursiveValidator} from "./recursive/validator"
+import {RecursiveValue} from "./types"
 
 
 export type IsRequired< T > =
@@ -28,7 +28,7 @@ export type ValuesOf< T extends { } > = T[ keyof T ] & unknown;
 
 export type FlattenObject< T > = { [ K in keyof T ]: T[ K ] & unknown; };
 
-export type AdditionalProperties< T, U > =
+export type AdditionalProperties< T extends {}, U > =
 	FlattenObject< T & Record< string, U | ValuesOf< T > > >;
 
 export type TypeOf< T, InclRequired = false > =

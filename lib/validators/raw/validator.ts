@@ -1,9 +1,6 @@
-import { CoreValidator } from "../core/validator.js"
-import {
-	extractRequiredValidator,
-	RequiredValidator,
-} from "../required/validator.js"
-import { AnyType } from "../types.js"
+import {CoreValidator} from "../core/validator"
+import {extractRequiredValidator, RequiredValidator,} from "../required/validator"
+import {AnyType} from "../types"
 
 
 export class RawValidator extends CoreValidator< unknown >

@@ -1,8 +1,7 @@
-import { prettify } from "awesome-ajv-errors/dist/index-browser.js"
-import { styledPrettify } from "awesome-ajv-errors/dist/index-try-styled.js"
-
-import { setPrettify } from "./ajv-errors.js"
-import { getSuretypeOptions, setSuretypeOptions } from "./options.js"
+import {setPrettify} from "./ajv-errors"
+import {getSuretypeOptions, setSuretypeOptions} from "./options"
+import {prettify} from "awesome-ajv-errors";
+import {styledPrettify} from "awesome-ajv-errors/dist/index-try-styled";
 
 setPrettify( prettify );
 styledPrettify

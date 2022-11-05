@@ -1,10 +1,6 @@
-import type { AnyType } from "./validators/types.js"
-import {
-	CoreValidator,
-	exposeCoreValidator,
-	TreeTraverser,
-} from "./validators/core/validator.js"
-import { getRaw } from "./validators/raw/validator.js"
+import type {AnyType} from "./validators/types"
+import {CoreValidator, exposeCoreValidator, TreeTraverser,} from "./validators/core/validator"
+import {getRaw} from "./validators/raw/validator"
 
 
 export function validatorToSchema< T extends CoreValidator< unknown > >(

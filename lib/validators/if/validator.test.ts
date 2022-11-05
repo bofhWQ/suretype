@@ -1,11 +1,11 @@
-import { IfValidator } from "./validator.js"
-import { validatorType } from "../../validation.js"
-import { validateJsonSchema, validate } from "../../json-schema.js"
-import { RawValidator } from "../raw/validator.js"
-import { StringValidator } from "../string/validator.js"
-import { NumberValidator } from "../number/validator.js"
-import { suretype } from "../../api/index.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
+import {IfValidator} from "./validator"
+import {validatorType} from "../../validation"
+import {validate, validateJsonSchema} from "../../json-schema"
+import {RawValidator} from "../raw/validator"
+import {StringValidator} from "../string/validator"
+import {NumberValidator} from "../number/validator"
+import {suretype} from "../../api/index"
+import {extractSingleJsonSchema} from "../../extract-json-schema"
 
 
 describe( "IfValidator", ( ) =>

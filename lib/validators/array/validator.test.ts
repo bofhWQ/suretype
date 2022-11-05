@@ -1,12 +1,12 @@
-import { ArrayValidator } from "./validator.js"
-import { validatorType } from "../../validation.js"
-import { validateJsonSchema, validate } from "../../json-schema.js"
-import { AnyValidator } from "../any/validator";
-import { AnyOfValidator } from "../or/validator.js"
-import { StringValidator } from "../string/validator.js"
-import { BooleanValidator } from "../boolean/validator.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
-import { RawValidator } from "../raw/validator.js"
+import {ArrayValidator} from "./validator"
+import {validatorType} from "../../validation"
+import {validate, validateJsonSchema} from "../../json-schema"
+import {AnyValidator} from "../any/validator";
+import {AnyOfValidator} from "../or/validator"
+import {StringValidator} from "../string/validator"
+import {BooleanValidator} from "../boolean/validator"
+import {extractSingleJsonSchema} from "../../extract-json-schema"
+import {RawValidator} from "../raw/validator"
 
 
 describe( "ArrayValidator", ( ) =>

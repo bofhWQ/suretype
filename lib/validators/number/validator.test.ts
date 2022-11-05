@@ -1,8 +1,8 @@
-import { NumberValidator } from "./validator.js"
-import { validatorType } from "../../validation.js"
-import { validateJsonSchema, validate } from "../../json-schema.js"
-import { DuplicateError } from "../../errors.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
+import {NumberValidator} from "./validator"
+import {validatorType} from "../../validation"
+import {validate, validateJsonSchema} from "../../json-schema"
+import {DuplicateError} from "../../errors"
+import {extractSingleJsonSchema} from "../../extract-json-schema"
 
 
 describe( "NumberValidator", ( ) =>

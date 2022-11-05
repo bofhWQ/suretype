@@ -1,7 +1,6 @@
-import { inspect } from "node:util"
-
-import { v, compile, validate, isValid, ensure } from "./index-nodejs.js"
-import { ValidationError } from "./validation-error.js"
+import {inspect} from "node:util"
+import {compile, ensure, isValid, v, validate} from "./index-nodejs"
+import {ValidationError} from "./validation-error"
 
 
 const getError = ( fn: ( ) => any ): Error =>

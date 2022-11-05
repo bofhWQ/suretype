@@ -1,6 +1,6 @@
-import { Type } from "../types.js"
-import { TreeTraverser } from "../core/validator.js"
-import { ValueValidator } from "../value/validator.js"
+import {Type} from "../types"
+import {TreeTraverser} from "../core/validator"
+import {ValueValidator} from "../value/validator"
 
 
 export class BooleanValidator< T extends boolean = boolean >

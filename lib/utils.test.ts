@@ -1,4 +1,4 @@
-import { objectOf } from "./utils.js"
+import {objectOf} from "./utils"
 
 describe( "utils/objectOf", ( ) =>
 {

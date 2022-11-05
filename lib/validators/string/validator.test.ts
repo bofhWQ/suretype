@@ -1,8 +1,8 @@
-import { StringValidator } from "./validator.js"
-import { validatorType } from "../../validation.js"
-import { validateJsonSchema, validate } from "../../json-schema.js"
-import { DuplicateConstraintError } from "../../errors.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
+import {StringValidator} from "./validator"
+import {validatorType} from "../../validation"
+import {validate, validateJsonSchema} from "../../json-schema"
+import {DuplicateConstraintError} from "../../errors"
+import {extractSingleJsonSchema} from "../../extract-json-schema"
 
 
 describe( "StringValidator", ( ) =>

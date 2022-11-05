@@ -1,10 +1,7 @@
-import { RecursiveValidator } from "./validator.js"
-import { validatorType } from "../../validation.js"
-import { suretype, v } from "../../api/index.js"
-import {
-	extractSingleJsonSchema,
-	extractJsonSchema,
-} from "../../extract-json-schema.js"
+import {RecursiveValidator} from "./validator"
+import {validatorType} from "../../validation"
+import {suretype, v} from "../../api/index"
+import {extractJsonSchema, extractSingleJsonSchema,} from "../../extract-json-schema"
 
 
 describe( "RecursiveValidator", ( ) =>

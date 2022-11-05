@@ -1,8 +1,8 @@
-import { CoreValidator, exposeCoreValidator } from "./validator.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
-import { getAnnotations } from "../../annotations.js"
-import { annotate } from "../../api/index.js"
-import { AnyType } from "../types.js"
+import {CoreValidator, exposeCoreValidator} from "./validator"
+import {extractSingleJsonSchema} from "../../extract-json-schema"
+import {getAnnotations} from "../../annotations"
+import {annotate} from "../../api/index"
+import {AnyType} from "../types"
 
 
 describe( "CoreValidator", ( ) =>

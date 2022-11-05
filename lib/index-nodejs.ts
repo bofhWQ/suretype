@@ -1,12 +1,12 @@
-import "./json-schema-nodejs.js"
-import "./ajv-errors-nodejs.js"
-export * from "./index-core.js"
+import "./json-schema-nodejs"
+import "./ajv-errors-nodejs"
+import {inspect} from "node:util"
+import {setErrorHook, ValidationError} from "./validation-error"
+
+export * from "./index-core"
 
 
 // Patch the ValidationError to make Node.js console printing prettier
-
-import { inspect } from "node:util"
-import { setErrorHook, ValidationError } from "./validation-error.js"
 
 ( ValidationError.prototype as any )[ inspect.custom ] = function( )
 {

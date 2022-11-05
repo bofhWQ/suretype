@@ -1,9 +1,6 @@
-import {
-	extractJsonSchema,
-	extractSingleJsonSchema,
-} from "./extract-json-schema.js"
-import { suretype, v } from "./api/index.js"
-import { ExportRefMethod } from "./types.js"
+import {extractJsonSchema, extractSingleJsonSchema,} from "./extract-json-schema"
+import {suretype, v} from "./api/index"
+import {ExportRefMethod} from "./types"
 
 
 describe( "extract-json-schema", ( ) =>

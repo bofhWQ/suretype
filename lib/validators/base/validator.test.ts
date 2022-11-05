@@ -1,7 +1,7 @@
-import { Type } from "../types.js"
-import { BaseValidator } from "./validator.js"
-import { validatorType } from "../../validation.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
+import {Type} from "../types"
+import {BaseValidator} from "./validator"
+import {validatorType} from "../../validation"
+import {extractSingleJsonSchema} from "../../extract-json-schema"
 
 
 describe( "BaseValidator", ( ) =>

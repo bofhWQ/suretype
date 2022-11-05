@@ -1,14 +1,18 @@
-import { ObjectValidator } from "./validator.js"
-import { validatorType } from "../../validation.js"
-import { validateJsonSchema, validate, ensure } from "../../json-schema.js"
-import { RawValidator } from "../raw/validator.js"
-import { NumberValidator } from "../number/validator.js"
-import { StringValidator } from "../string/validator.js"
-import { BooleanValidator } from "../boolean/validator.js"
-import { IfValidator } from "../if/validator.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
-import { TypeOf } from "../functional.js"
-import { v } from "../../api/index.js"
+import {ObjectValidator} from "./validator";
+import {validatorType} from "../../validation";
+import {
+	BooleanValidator,
+	ensure,
+	extractSingleJsonSchema,
+	IfValidator,
+	NumberValidator,
+	RawValidator,
+	StringValidator,
+	TypeOf,
+	v,
+	validate
+} from "../../index-core";
+import {validateJsonSchema} from "../../json-schema";
 
 
 describe( "ObjectValidator", ( ) =>

@@ -1,4 +1,4 @@
-import { DuplicateError, DuplicateConstraintError } from "./errors.js"
+import {DuplicateConstraintError, DuplicateError} from "./errors"
 
 describe( 'errors', ( ) =>
 {

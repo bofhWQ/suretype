@@ -1,20 +1,15 @@
-import Ajv from "ajv"
-
-import { CoreValidator } from "./validators/core/validator.js"
-import { TypeOf } from "./validators/functional.js"
-import {
-	ValidationResult,
-	ValidationError,
-	makeExplanationGetter,
-} from "./validation-error.js"
-import { extractSingleJsonSchema } from "./extract-json-schema.js"
-import { attachSchemaToValidator } from "./validation.js"
-import { getRaw } from "./validators/raw/validator.js"
+import {CoreValidator} from "./validators/core/validator"
+import {TypeOf} from "./validators/functional"
+import {makeExplanationGetter, ValidationError, ValidationResult,} from "./validation-error"
+import {extractSingleJsonSchema} from "./extract-json-schema"
+import {attachSchemaToValidator} from "./validation"
+import {getRaw} from "./validators/raw/validator"
+import Ajv, {ErrorObject, Options, ValidateFunction as AjvValidateFunction} from "ajv"
 
 
 function validateWrapper(
 	value: any,
-	validator: Ajv.ValidateFunction,
+	validator: AjvValidateFunction,
 	opts: CompileOptionsCore
 )
 : ValidationResult
@@ -25,7 +20,7 @@ function validateWrapper(
 
 	const ret: ValidationResult = {
 		ok: false,
-		errors: [ ...validator.errors as Array< Ajv.ErrorObject > ],
+		errors: [ ...validator.errors as Array< ErrorObject > ],
 	};
 
 	return makeExplanationGetter(
@@ -49,7 +44,7 @@ export function compileSchema( schema: { }, opts: CompileOptionsCore = { } )
 
 	const ajv = new Ajv( ajvOptions );
 
-	const validator = ajv.compile( schema );
+	const validator = ajv.compile( schema || false );
 
 	return function validate( value: any )
 	{
@@ -71,7 +66,7 @@ export interface CompileOptionsCore
 	/**
 	 * Ajv options
 	 */
-	ajvOptions?: Ajv.Options;
+	ajvOptions?: Options;
 
 	/**
 	 * Use colors or disable colors for this validator (will fallback to the
@@ -167,7 +162,7 @@ export function compile< T extends CoreValidator< unknown > >(
 	return attachSchemaToValidator( validate, schema );
 }
 
-export function validate< T extends CoreValidator< unknown > >(
+export function validate< T extends CoreValidator< unknown >   >(
 	schema: T,
 	value: any,
 	options?: CompileOptionsCore
@@ -199,10 +194,10 @@ export function ensure< T extends CoreValidator< unknown > >(
 }
 
 function innerCompile(
-	options: Ajv.Options,
+	options: Options,
 	validator: CoreValidator< unknown >
 )
-: Ajv.ValidateFunction
+: AjvValidateFunction
 {
 	const ajv = new Ajv( options );
 

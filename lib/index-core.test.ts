@@ -1,4 +1,4 @@
-import * as index from "./index-core.js"
+import * as index from "./index-core"
 
 
 describe( "index", ( ) =>

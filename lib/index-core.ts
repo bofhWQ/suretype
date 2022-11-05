@@ -1,9 +1,9 @@
-export * from "./api/index.js"
+export * from "./api/index"
 
-export * from "./errors.js"
-export { ValidationError } from "./validation-error.js"
+export * from "./errors"
+export { ValidationError } from "./validation-error"
 
-export * from "./types.js"
+export * from "./types"
 
 export {
 	type ValidateFunction,
@@ -13,7 +13,7 @@ export {
 	validate,
 	isValid,
 	ensure,
-} from "./json-schema.js"
+} from "./json-schema"
 
 export {
 	type ExtractJsonSchemaOptions,
@@ -21,16 +21,16 @@ export {
 	type ExtractedJsonSchema,
 	extractJsonSchema,
 	extractSingleJsonSchema,
-} from "./extract-json-schema.js"
+} from "./extract-json-schema"
 
-export { getValidatorSchema } from "./validation.js"
+export { getValidatorSchema } from "./validation"
 
 export {
 	type Annotations,
 	type TopLevelAnnotations,
 	getAnnotations,
-} from "./annotations.js"
+} from "./annotations"
 
-export type { TypeOf } from "./validators/functional.js"
+export type { TypeOf } from "./validators/functional"
 
-export { type SuretypeOptions, setSuretypeOptions } from "./options.js"
+export { type SuretypeOptions, setSuretypeOptions } from "./options"

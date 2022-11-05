@@ -1,11 +1,11 @@
-import { Type } from "../types.js"
-import { ValueValidator } from "./validator.js"
-import { TreeTraverser } from "../core/validator.js"
-import { validatorType } from "../../validation.js"
-import { RequiredValidator, isRequired } from "../required/validator.js"
-import { DuplicateConstraintError } from "../../errors.js"
-import { StringValidator } from "../string/validator.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
+import {Type} from "../types"
+import {ValueValidator} from "./validator"
+import {TreeTraverser} from "../core/validator"
+import {validatorType} from "../../validation"
+import {isRequired, RequiredValidator} from "../required/validator"
+import {DuplicateConstraintError} from "../../errors"
+import {StringValidator} from "../string/validator"
+import {extractSingleJsonSchema} from "../../extract-json-schema"
 
 
 class X extends ValueValidator< string, X >

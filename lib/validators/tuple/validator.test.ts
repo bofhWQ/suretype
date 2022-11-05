@@ -1,12 +1,15 @@
-import { TupleValidator } from "./validator.js"
-import { validatorType } from "../../validation.js"
-import { validateJsonSchema, validate } from "../../json-schema.js"
-import { AnyValidator } from "../any/validator.js"
-import { NumberValidator } from "../number/validator.js"
-import { StringValidator } from "../string/validator.js"
-import { BooleanValidator } from "../boolean/validator.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
-import { RawValidator } from "../raw/validator.js"
+import {TupleValidator} from "./validator";
+import {AnyValidator} from "../any/validator";
+import {validatorType} from "../../validation";
+import {
+	BooleanValidator,
+	extractSingleJsonSchema,
+	NumberValidator,
+	RawValidator,
+	StringValidator,
+	validate
+} from "../../index-core";
+import {validateJsonSchema} from "../../json-schema";
 
 
 describe( "TupleValidator", ( ) =>

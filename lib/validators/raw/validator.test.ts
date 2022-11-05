@@ -1,6 +1,6 @@
-import { RawValidator } from "./validator.js"
-import { validateJsonSchema, validate } from "../../json-schema.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
+import {RawValidator} from "./validator"
+import {validate, validateJsonSchema} from "../../json-schema"
+import {extractSingleJsonSchema} from "../../extract-json-schema"
 
 
 describe( "RawValidator", ( ) =>

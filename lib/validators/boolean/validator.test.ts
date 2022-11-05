@@ -1,7 +1,7 @@
-import { BooleanValidator } from "./validator.js"
-import { validatorType } from "../../validation.js"
-import { validateJsonSchema, validate } from "../../json-schema.js"
-import { extractSingleJsonSchema } from "../../extract-json-schema.js"
+import {BooleanValidator} from "./validator"
+import {validatorType} from "../../validation"
+import {validate, validateJsonSchema} from "../../json-schema"
+import {extractSingleJsonSchema} from "../../extract-json-schema"
 
 
 describe( "BooleanValidator", ( ) =>

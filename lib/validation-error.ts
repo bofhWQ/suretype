@@ -1,7 +1,7 @@
 import type * as Ajv from "ajv"
 
-import { getPrettify } from "./ajv-errors.js"
-import { SuretypeOptions, getSuretypeOptions } from "./options.js"
+import {getPrettify} from "./ajv-errors"
+import {getSuretypeOptions, SuretypeOptions} from "./options"
 
 
 export type ErrorHook = ( err: ValidationError ) => void;
